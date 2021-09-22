@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>D-GRAM</h1>
+        </div>
+        <div class="icons">
+            <img src="Socialbook_img/notification.png" alt="">
+            <img src="Socialbook_img/inbox.png" alt="">
+            <img src="Socialbook_img/video.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search">
+            <img src="Socialbook_img/search.png" alt="" style="margin: 5px;">
+        </div>
+        <div class="profile" style="display: flex;" onclick="show()">
+            <img src="Socialbook_img/pp.jpg" alt="">
+            <span>
+                <h2 style="font-size: 15px; color: white; margin: 15px 5px;">Devansh Abrol</h2>
+            </span>
+        </div>
+    </nav>
+    <div class="chat" style="display: flex; align-items: center;">
+        <img src="Socialbook_img/chat.png" alt="" style="margin: 20px 20px; height: 60px; width: 60px; margin-right: 10px;">
+        <h1 style="color: rgb(240, 234, 234);">Chat</h1>
+
+    </div>
+    <div class="messagebox">
+        <div class="container" >
+            
+        </div>
+        <div class="msg">
+            <form action="" id="send-div">
+                <input type="text" placeholder="Type your text here!" class="text">
+                <input type="button" value="Send" class="btn">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
