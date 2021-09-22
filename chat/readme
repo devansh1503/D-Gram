@@ -1,3 +1,4 @@
+(NOTE: To use this Chat Application you must have Node.JS, Nodemon, and Socket.io installed)
 To use this Chat application:
 1. Open terminal in your editor
 2. write the following commands:
