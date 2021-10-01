@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-up</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(39, 39, 44);
+            background-repeat: no-repeat;
+            background-size: cover; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;       
+
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .but{
+            background-color:rgba(27, 27, 27, 0.945);
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 85%;
+            margin: 15px 24px;
+        }
+        .but:hover{
+            background-color: black;
+        }
+        #options{
+            background-color: black;
+            align-items: center;
+            width: 300px;
+            opacity: 0.9;
+            z-index: 1;
+        }
+        p{
+            color: azure;
+            padding-bottom: 30px;
+            padding-left: 30px;
+        }
+        .formin{
+            display: none;
+            z-index: 9;
+            background-color: black;
+            align-items: center;
+            width: 300px;
+            opacity: 0.9;
+            padding: 15px 15px;
+        }
+        .formin input{
+            width: 100%;
+            margin: 5px 0px 10px 0px;
+            padding: 15px 15px;
+            border: none;
+            background-image: linear-gradient(to right,purple,blue);
+            color: aliceblue;
+        }
+        #sign{
+            z-index: 1;
+        }
+        .logo{
+            color: #efefef;
+           background-image: linear-gradient(to right, purple,rgb(39, 39, 44));
+           border-left: solid 10px #efefef ;
+        }
+        .logo h1{
+           font-size: 40px;
+        }
+        .box{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, transparent, transparent 40%, yellow),
+            linear-gradient(#262626, #141414);
+            animation: rotate 1.5s linear infinite;
+            z-index: 0;
+            transition: all ease-in-out;
+        }
+        .box::before, .box::after {
+            content: " ";
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            right: 8px;
+            bottom: 8px;
+            background: linear-gradient(#161616,#262626);
+            border-radius: inherit;
+        }
+        .box::before{
+            background: linear-gradient(45deg, transparent, transparent 40%, yellow);
+            filter: blur(32px);
+        }
+        @keyframes rotate{
+            100% {
+                transform: rotate(360deg);
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo" style="position: absolute; top: 0; left: 0; margin: 20px;">
+        <h1 style="font-family:'poppins',sans-serif ;">D-GRAM</h1>
+    </div>
+    <div id="options">
+        <button class="but" style="margin-top: 20px;" onclick="appear();">Login</button>
+        <button class="but" onclick="sinapp();">Sign-Up</button>
+        <p>Use G-mail or Facebook account</p>
+    </div>
+    <div id="sign" class="formin">
+        <form id="sin-cont">
+            <input type="text" name="fn" placeholder="Enter Your First Name" required>
+            <input type="text" name="ln" placeholder="Enter Your Last Name" required>
+            <input type="text" name="un" placeholder="Enter Your Username"required>
+            <input type="email" name="em" placeholder="Enter E-mail" required>
+            <input type="password" name="ps" placeholder="Choose a password" required>
+            <button class="but">Sign-Up</button>
+        </form>
+    </div>
+    <div id="login" class="formin">
+        <form id="log-cont" action="/main">
+            <input type="text" placeholder="Enter Username" id="name" required>
+            <input type="password" placeholder="Enter Password" id="pass" required>
+            <button class="but">Enter</button>
+        </form>
+    </div>
+    <div class="box" id="boxx"></div>
+<script>
+    function appear(){
+        document.getElementById("login").style.display="block";
+        document.getElementById("options").style.display="none";
+        document.getElementById("boxx").style.width = 500;
+        document.getElementById("boxx").style.height = 500;
+    }
+    function sinapp(){
+        document.getElementById("sign").style.display="block";
+        document.getElementById("options").style.display="none";
+        document.getElementById("boxx").style.width = 600;
+        document.getElementById("boxx").style.height = 600;
+    }
+ 
+</script>
+</body>
+</html>
