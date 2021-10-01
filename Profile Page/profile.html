@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Vibur:400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>D-GRAM</h1>
+        </div>
+        <div class="icons">
+            <img src="Socialbook_img/notification.png" alt="">
+            <img src="Socialbook_img/inbox.png" alt="">
+            <img src="Socialbook_img/video.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search">
+            <img src="Socialbook_img/search.png" alt="" style="margin: 5px;">
+        </div>
+        <div class="profile" style="display: flex;" onclick="show()">
+            <img src="pp.jpg" alt="">
+            <span>
+                <h2 style="font-size: 15px; color: white; margin: 15px 5px;">Devansh Abrol</h2>
+            </span>
+        </div>
+    </nav>
+    <div class="headimg">
+        <div class="backg">
+            <img src="./photo-1508363778367-af363f107cbb.jpg" alt="">
+        </div>
+        <div class="profilepic">
+            <img src="pp.jpg" alt="Profile Picture">
+        </div>
+        <div class="name" style="margin-top: 20px;">
+            <h1 class="neontext" id="newname">Devansh Abrol</h1>
+        </div>
+        <div class="follow" style="margin: 20px 20px;">
+            <button>Follow</button>
+        </div>
+    </div>
+
+     <div class="up">
+         <div class="main">
+             <div class="sections">
+                 <div class="sec" onclick="onscr(1)">About</div>
+                 <div class="sec" onclick="onscr(2)">Posts</div>
+                 <div class="sec" onclick="onscr(3)">Friends</div>
+                 <div class="sec" onclick="onscr(4)">Settings</div>
+                 
+             </div>
+             <div class="info">
+                 <div class="about">
+                    <div class="information">
+                        <div class="eles">
+                            <div class="title">BIO</div>
+                            <div class="textin" id="newbio">Engineer | Writer | Unique</div>
+                        </div>
+                        <div class="eles">
+                           <div class="title">CONTACTS</div>
+                           <div class="textin" id="newcont">+918558906689</div>
+                       </div>
+                       <div class="eles">
+                           <div class="title">USERNAME</div>
+                           <div class="textin" id="newun">devansh1503</div>
+                       </div>
+                       <div class="eles">
+                           <div class="title">LIKES</div>
+                           <div class="textin" id="newlikes">Writing, Music, Weeknd</div>
+                       </div>
+                       <div class="eles">
+                           <div class="title">BIRTHDAY</div>
+                           <div class="textin">15th March 2002 (19 years old)</div>
+                       </div>
+                    </div>
+
+                    <div class="bitmoji">
+                        <img src="WhatsApp Image 2021-09-30 at 4.55.55 PM.jpeg" alt="">
+                    </div>
+                 </div>
+                 <div class="posts dis" >
+                     <img src="pp.jpg" alt="">
+                     <img src="pp.jpg" alt="">
+                     <img src="pp.jpg" alt="">
+                     <img src="pp.jpg" alt="">
+                     <img src="pp.jpg" alt="">
+                     <img src="pp.jpg" alt="">
+                     <img src="pp.jpg" alt="">
+                     <img src="pp.jpg" alt="">
+                 </div>
+                 <div class="friends dis" >
+                     <div class="frnd">
+                         <img src="member-2.png" alt="">
+                         <div class="name">Friend</div>
+                     </div>
+                     <div class="frnd">
+                        <img src="member-2.png" alt="">
+                        <div class="name">Friend</div>
+                    </div>
+                    <div class="frnd">
+                        <img src="member-2.png" alt="">
+                        <div class="name">Friend</div>
+                    </div>
+                    <div class="frnd">
+                        <img src="member-2.png" alt="">
+                        <div class="name">Friend</div>
+                    </div>
+                    <div class="frnd">
+                        <img src="member-2.png" alt="">
+                        <div class="name">Friend</div>
+                    </div>
+                    <div class="frnd">
+                        <img src="member-2.png" alt="">
+                        <div class="name">Friend</div>
+                    </div>
+                    <div class="frnd">
+                        <img src="member-2.png" alt="">
+                        <div class="name">Friend</div>
+                    </div>
+                    <div class="frnd">
+                        <img src="member-2.png" alt="">
+                        <div class="name">Friend</div>
+                    </div>
+                 </div>
+                 <div class="saved dis" >
+                     <div class="update">
+                        <div class="form">
+                            <div class="oneele">
+                                Name: <input type="text" name="" id="myname">
+                            </div>
+                            <div class="oneele">
+                                Username: <input type="text" name="" id="usern">
+                            </div>
+                            <div class="oneele">
+                                Bio: <input type="text" name="" id="bios">
+                            </div>
+                            <div class="oneele">
+                                Contact: <input type="text" name="" id="cont">
+                            </div>
+                            <div class="oneele">
+                                Likes: <input type="text" name="" id="lik">
+                            </div>
+                            <button id="apply" onclick="change()">Appy Changes</button>
+                        </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <script src="script.js"></script>
+
+</body>
+</html>
