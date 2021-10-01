@@ -8,4 +8,7 @@ Features:
 - A Login and Sign-up page
 - An aesthetic and professional design
 - A Profile Page having neon theme
+- Express to start a server
 (NOTE: The chat application should be used seperately with the instructions in readme file for it. Opening the chat application from the main of this web page will only open the interface of the chat application.)
+
+
