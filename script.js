@@ -40,3 +40,6 @@ function logout(){
 function chatapp(){
     window.location = "chat/chatmain.html"
 }
+function openprofile(){
+    window.location = "profile page/profile.html"
+}
