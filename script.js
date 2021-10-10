@@ -41,5 +41,5 @@ function chatapp(){
     window.location = "chat/chatmain.html"
 }
 function openprofile(){
-    window.location = "Profile page/profile.html"
+    window.location = "Profile Page/profile.html"
 }
